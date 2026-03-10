@@ -83,7 +83,7 @@ export function Hero() {
               >
                 {/* Contenedor del logo con drop-shadow reactivo */}
                 <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)] hover:drop-shadow-[0_0_35px_rgba(220,20,20,0.5)] transition-all duration-500">
-                  <LogoABFinal size={320} />
+                  <img src="/yo.png" alt="Logo" className="w-80 h-80" />
                 </div>
               </motion.div>
             </motion.div>
