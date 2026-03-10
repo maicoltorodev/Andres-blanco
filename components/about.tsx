@@ -79,7 +79,7 @@ export function About() {
             <div className="mt-10 grid grid-cols-2 gap-6">
               {[
                 { label: "Semestre", value: "9no" },
-                { label: "Carrera", value: "Administración" },
+                { label: "Carrera", value: "Ingeniería de Sistemas" },
                 { label: "Grupos activos", value: "4+" },
                 { label: "Proyectos liderados", value: "12+" },
               ].map((item, index) => (
