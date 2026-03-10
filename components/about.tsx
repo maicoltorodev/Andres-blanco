@@ -78,7 +78,7 @@ export function About() {
             {/* Credentials */}
             <div className="mt-10 grid grid-cols-2 gap-6">
               {[
-                { label: "Semestre", value: "9no" },
+                { label: "Semestre", value: "6to" },
                 { label: "Carrera", value: "Ingeniería de Sistemas" },
                 { label: "Grupos activos", value: "4+" },
                 { label: "Proyectos liderados", value: "12+" },
