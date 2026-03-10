@@ -3,12 +3,12 @@ import { Inter, Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: '--font-inter'
 });
 
-const spaceGrotesk = Space_Grotesk({ 
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: '--font-space-grotesk'
 });
@@ -17,6 +17,26 @@ export const metadata: Metadata = {
   title: 'Andrés Blanco | Presidencia EAN 2026',
   description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
   generator: 'v0.app',
+  openGraph: {
+    title: 'Andrés Blanco | Presidencia EAN 2026',
+    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
+    images: [
+      {
+        url: '/metadata.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Andrés Blanco | Presidencia EAN 2026',
+      },
+    ],
+    locale: 'es_CO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Andrés Blanco | Presidencia EAN 2026',
+    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
+    images: ['/metadata.jpg'],
+  },
   icons: {
     icon: [
       {
