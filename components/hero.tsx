@@ -36,7 +36,7 @@ export function Hero() {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: [0, 0.6, 0.3], scale: [0.5, 1.2, 1] }}
               transition={{ duration: 2.5, ease: "easeOut", delay: 0.1 }}
-              className="absolute w-[350px] h-[350px] bg-accent/20 blur-[80px] rounded-full mix-blend-screen"
+              className="absolute w-[350px] h-[350px] bg-white/20 blur-[80px] rounded-full mix-blend-screen"
             />
 
             {/* Logo principal animado (Entrance) */}
