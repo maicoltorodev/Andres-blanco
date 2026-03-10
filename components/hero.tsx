@@ -96,9 +96,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 font-[family-name:var(--font-display)] text-balance"
           >
-            <span className="text-foreground">El cambio</span>
+            <span className="text-foreground">Vota por Blanco</span>
             <br />
-            <span className="text-accent">empieza contigo</span>
+            <span className="text-accent">NO EN BLANCO</span>
           </motion.h1>
 
           {/* Subtitle */}
