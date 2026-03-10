@@ -36,7 +36,7 @@ export function Hero() {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: [0, 0.6, 0.3], scale: [0.5, 1.2, 1] }}
               transition={{ duration: 2.5, ease: "easeOut", delay: 0.1 }}
-              className="absolute w-[350px] h-[350px] bg-white/20 blur-[80px] rounded-full mix-blend-screen"
+              className="absolute w-[350px] h-[350px] bg-white/40 blur-[80px] rounded-full mix-blend-screen"
             />
 
             {/* Logo principal animado (Entrance) */}
@@ -83,7 +83,7 @@ export function Hero() {
               >
                 {/* Contenedor del logo con drop-shadow reactivo */}
                 <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)] hover:drop-shadow-[0_0_35px_rgba(220,20,20,0.5)] transition-all duration-500">
-                  <img src="/yo.png" alt="Logo" className="w-80 h-80" />
+                  <img src="/logoab.png" alt="Logo" className="w-80 h-80" />
                 </div>
               </motion.div>
             </motion.div>
