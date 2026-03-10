@@ -98,7 +98,7 @@ export function Hero() {
           >
             <span className="text-foreground">VOTA POR BLANCO</span>
             <br />
-            <span className="text-accent">No en blanco</span>
+            <span className="text-white text-2xl md:text-4xl lg:text-5xl line-through">NO EN BLANCO</span>
           </motion.h1>
 
           {/* Subtitle */}
