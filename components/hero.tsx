@@ -143,7 +143,7 @@ export function Hero() {
             className="mt-20 grid grid-cols-3 gap-8 md:gap-16"
           >
             {[
-              { number: "5+", label: "Años en EAN" },
+              { number: "3+", label: "Años en EAN" },
               { number: "100%", label: "Compromiso" },
               { number: "1", label: "Visión" },
             ].map((stat, index) => (
