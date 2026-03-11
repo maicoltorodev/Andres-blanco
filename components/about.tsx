@@ -22,7 +22,7 @@ export function About() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-secondary">
               <Image
-                src="/blanco.jpeg"
+                src="/espaldas.png"
                 alt="Andrés Blanco"
                 fill
                 className="object-cover object-center"
