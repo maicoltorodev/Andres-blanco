@@ -64,7 +64,7 @@ export function Proposals() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group p-8 rounded-2xl bg-green-600 border border-green-700 hover:border-green-500 transition-all duration-300"
+              className="group p-8 rounded-2xl bg-accent border border-accent/80 hover:border-accent transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
                 <proposal.icon className="w-7 h-7 text-white" />
