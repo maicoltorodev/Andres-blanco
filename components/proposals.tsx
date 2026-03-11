@@ -2,32 +2,44 @@
 
 import { motion } from "framer-motion"
 import { 
-  Lightbulb, 
-  MessageSquare, 
-  Zap, 
-  Star,
+  BookOpen, 
+  Users, 
+  Building2, 
+  Wifi,
+  Clock,
+  Heart
 } from "lucide-react"
 
 const proposals = [
   {
-    icon: Lightbulb,
+    icon: BookOpen,
     title: "Concursos de innovación",
     description: "Crear concursos entre estudiantes para desarrollar soluciones tecnológicas, apps y proyectos.",
   },
   {
-    icon: MessageSquare,
+    icon: Users,
     title: "Cambiemos la U Juntos",
     description: "Crear una plataforma digital donde los estudiantes puedan proponer ideas para mejorar la universidad.",
   },
   {
-    icon: Zap,
+    icon: Building2,
     title: "Comunidad Tech y Creativa de la Universidad",
     description: "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarollar proyectos y aprender juntos colaborativamente. ",
   },
   {
-    icon: Star,
+    icon: Wifi,
+    title: "Conectividad Total",
+    description: "WiFi de alta velocidad en todo el campus y equipos tecnológicos actualizados.",
+  },
+  {
+    icon: Clock,
     title: "Feria de Talento y Proyectos",
     description: "Organizar una feria semestral donde los estudiantes presenten sus proyectos, investigaciones, apps, emprendimientos o iniciativas sociales.",
+  },
+  {
+    icon: Heart,
+    title: "Bienestar Integral",
+    description: "Programas de salud mental, deportes y cultura para una vida universitaria equilibrada.",
   },
 ]
 
@@ -55,7 +67,7 @@ export function Proposals() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {proposals.map((proposal, index) => (
             <motion.div
               key={index}
@@ -64,15 +76,15 @@ export function Proposals() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group p-8 rounded-2xl bg-transparent border-2 border-accent hover:border-accent transition-all duration-300"
+              className="group p-8 rounded-2xl bg-secondary/50 border border-border hover:border-accent/50 transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
                 <proposal.icon className="w-7 h-7 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 font-[family-name:var(--font-display)] text-accent">
+              <h3 className="text-xl font-semibold mb-3 font-[family-name:var(--font-display)]">
                 {proposal.title}
               </h3>
-              <p className="text-accent/90 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {proposal.description}
               </p>
             </motion.div>
