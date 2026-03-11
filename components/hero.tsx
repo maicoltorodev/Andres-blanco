@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
