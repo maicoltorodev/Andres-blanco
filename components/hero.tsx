@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="mb-8 mt-20"
+            className="mb-4 mt-8"
           >
             <img
               src="/yo.png"
@@ -46,12 +46,12 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold mb-0 leading-none">
             VOTA POR BLANCO
           </h1>
-          <h2 className="text-2xl md:text-4xl font-bold text-white line-through mb-6 p-0 leading-none">
+          <h2 className="text-2xl md:text-4xl font-bold text-white line-through mb-4 p-0 leading-none">
             NO EN BLANCO
           </h2>
 
           {/* subtitulo */}
-          <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mb-12">
+          <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mb-8">
             Andrés Blanco para Representante de la Facultad de Ingeniería.
             <span className="text-black"> Universidad EAN, Bogotá.</span>
           </p>
