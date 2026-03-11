@@ -4,12 +4,12 @@ import { motion } from "framer-motion"
 import { Check, Circle } from "lucide-react"
 
 const milestones = [
-  { date: "2023-2", title: "Mención de honor — Orquesta Filarmónica", description: "", completed: true },
-  { date: "2024-2", title: "Mérito por trabajo artístico — Cultura", description: "", completed: false },
-  { date: "2025-2", title: "Mérito por trabajo artístico — Cultura", description: "", completed: false },
-  { date: "2025",   title: "3er puesto — Competencia nacional de coros (ASCUN)", description: "", completed: false },
-  { date: "—",      title: "Mención de honor — Teatro CAFAM", description: "", completed: false },
-  { date: "25 de marzo", title: "Votaciones", description: "", completed: false },
+  { date: "2023-2", title: "Mención de honor — Orquesta Filarmónica", completed: true },
+  { date: "2024-2", title: "Mérito por trabajo artístico — Cultura", completed: true },
+  { date: "2025-2", title: "Mérito por trabajo artístico — Cultura", completed: true },
+  { date: "2025", title: "3er puesto — Competencia nacional de coros (ASCUN)", completed: true },
+  { date: "—", title: "Mención de honor — Teatro CAFAM", completed: true },
+  { date: "25 de marzo", title: "Votaciones", completed: false },
 ]
 
 export function Timeline() {
@@ -26,11 +26,13 @@ export function Timeline() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
             Calendario
           </span>
+
           <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-display)] mb-4 text-balance">
             Hoja de <span className="text-accent">ruta</span>
           </h2>
+
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Momentos clave (reconocimientos).
+            Reconocimientos y próximo paso.
           </p>
         </motion.div>
 
@@ -44,15 +46,13 @@ export function Timeline() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative flex gap-6 pb-12 last:pb-0"
             >
-              {/* Line connector */}
               {index !== milestones.length - 1 && (
                 <div className="absolute left-[19px] top-10 w-0.5 h-full bg-border" />
               )}
-              
-              {/* Icon */}
+
               <div className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
-                milestone.completed 
-                  ? "bg-accent text-accent-foreground" 
+                milestone.completed
+                  ? "bg-accent text-accent-foreground"
                   : "bg-secondary border-2 border-border"
               }`}>
                 {milestone.completed ? (
@@ -62,15 +62,11 @@ export function Timeline() {
                 )}
               </div>
 
-              {/* Content */}
               <div className="flex-1">
                 <span className="text-sm text-accent font-medium">{milestone.date}</span>
                 <h3 className="text-xl font-semibold mt-1 font-[family-name:var(--font-display)]">
                   {milestone.title}
                 </h3>
-                {milestone.description && (
-                  <p className="text-muted-foreground mt-2">{milestone.description}</p>
-                )}
               </div>
             </motion.div>
           ))}
