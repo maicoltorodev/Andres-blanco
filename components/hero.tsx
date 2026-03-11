@@ -9,19 +9,12 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* -- Hexagonal tiling background (centered so it's symmetric) -- */}
       <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0"
         style={{
-          // single hexagon SVG that tiles cleanly; backgroundPosition center -> symmetric
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='173.2' height='150' viewBox='0 0 173.2 150'%3E%3Cpolygon points='86.6,0 173.2,43.3 173.2,106.7 86.6,150 0,106.7 0,43.3' fill='none' stroke='rgba(255,193,7,0.18)' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E")`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "173.2px 150px", // tile size (tweak this number to scale hexes)
-          backgroundPosition: "center center", // <-- makes the pattern symmetric around center
-          // subtle overlay so center is a bit cleaner and edges fade
-          maskImage:
-            "radial-gradient(closest-side, rgba(0,0,0,1) 55%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.35) 95%)",
-          WebkitMaskImage:
-            "radial-gradient(closest-side, rgba(0,0,0,1) 55%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.35) 95%)",
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='173.2' viewBox='0 0 200 173.2'%3E%3Cg stroke='rgba(255,193,7,0.18)' stroke-width='1.2' fill='none'%3E%3Cpolygon points='50,0 100,28.8 100,86.6 50,115.4 0,86.6 0,28.8'/%3E%3Cpolygon points='150,0 200,28.8 200,86.6 150,115.4 100,86.6 100,28.8'/%3E%3Cpolygon points='100,57.7 150,86.6 150,144.3 100,173.2 50,144.3 50,86.6'/%3E%3C/svg%3E")`,
+          backgroundSize: "200px 173.2px",
+          backgroundPosition: "center",
+          backgroundRepeat: "repeat"
         }}
       />
 
