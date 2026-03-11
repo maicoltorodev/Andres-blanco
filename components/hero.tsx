@@ -3,23 +3,30 @@
 import { motion } from "framer-motion"
 import { ArrowRight, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { LogoABFinal } from "@/components/logo-ab"
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background hexagon pattern */}
-      <div 
-        className="absolute inset-0" 
+      {/* -- Hexagonal tiling background (centered so it's symmetric) -- */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='173.2' height='150'%3E%3Cdefs%3E%3ClinearGradient id='hex' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(255,193,7,0.15);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(255,193,7,0.08);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='86.6,0 173.2,50 173.2,150 86.6,200 0,150 0,50' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3Cpolygon points='86.6,100 173.2,150 173.2,250 86.6,300 0,250 0,150' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3Cpolygon points='0,100 86.6,150 86.6,250 0,300 -86.6,250 -86.6,150' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3C/svg%3E")`,
-          backgroundSize: '173.2px 150px',
-          backgroundPosition: '0 0'
+          // single hexagon SVG that tiles cleanly; backgroundPosition center -> symmetric
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='173.2' height='150' viewBox='0 0 173.2 150'%3E%3Cpolygon points='86.6,0 173.2,43.3 173.2,106.7 86.6,150 0,106.7 0,43.3' fill='none' stroke='rgba(255,193,7,0.18)' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E")`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "173.2px 150px", // tile size (tweak this number to scale hexes)
+          backgroundPosition: "center center", // <-- makes the pattern symmetric around center
+          // subtle overlay so center is a bit cleaner and edges fade
+          maskImage:
+            "radial-gradient(closest-side, rgba(0,0,0,1) 55%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.35) 95%)",
+          WebkitMaskImage:
+            "radial-gradient(closest-side, rgba(0,0,0,1) 55%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.6) 85%, rgba(0,0,0,0.35) 95%)",
         }}
       />
 
-      {/* Glowing orb effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] animate-pulse" />
+      {/* Glowing orb effect behind the logo */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[rgba(255,193,7,0.06)] rounded-full blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
@@ -50,7 +57,7 @@ export function Hero() {
           >
             <span className="text-foreground">VOTA POR BLANCO</span>
             <br />
-            <span className="text-white text-2xl md:text-4xl lg:text-5xl line-through">   NO EN BLANCO   </span>
+            <span className="text-white text-2xl md:text-4xl lg:text-5xl line-through">NO EN BLANCO</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -117,10 +124,7 @@ export function Hero() {
         transition={{ delay: 1, duration: 0.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
+        <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
           <ChevronDown className="h-8 w-8 text-muted-foreground" />
         </motion.div>
       </motion.div>
