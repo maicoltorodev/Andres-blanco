@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'Andrés Blanco | Presidencia EAN 2026',
-  description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
+  description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para representante de la facultad de ingeniería.',
   generator: 'v0.app',
   openGraph: {
     title: 'Andrés Blanco | Presidencia EAN 2026',

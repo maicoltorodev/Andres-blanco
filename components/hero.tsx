@@ -12,8 +12,8 @@ export function Hero() {
       <div 
         className="absolute inset-0" 
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cdefs%3E%3ClinearGradient id='hex' x1='0%' y1='0%' x2='100%' y2='100%'%3E%3Cstop offset='0%' style='stop-color:rgba(255,193,7,0.12);stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:rgba(255,193,7,0.08);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='40,10 60,20 60,40 40,50 20,40 20,20' fill='none' stroke='rgba(255,193,7,0.15)' stroke-width='1.5'/%3E%3C/svg%3E")`,
-          backgroundSize: '80px 80px',
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='173.2' height='150'%3E%3Cdefs%3E%3ClinearGradient id='hex' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(255,193,7,0.15);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(255,193,7,0.08);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='86.6,0 173.2,50 173.2,150 86.6,200 0,150 0,50' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3Cpolygon points='86.6,100 173.2,150 173.2,250 86.6,300 0,250 0,150' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3Cpolygon points='0,100 86.6,150 86.6,250 0,300 -86.6,250 -86.6,150' fill='none' stroke='rgba(255,193,7,0.2)' stroke-width='1.2'/%3E%3C/svg%3E")`,
+          backgroundSize: '173.2px 150px',
           backgroundPosition: '0 0'
         }}
       />
@@ -37,56 +37,8 @@ export function Hero() {
           </motion.div>
 
           {/* Logo con animación imponente */}
-          <div className="mb-12 relative flex justify-center items-center [perspective:1000px]">
-            {/* Aura de luz trasera pulsante */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: [0, 0.6, 0.3], scale: [0.5, 1.2, 1] }}
-              transition={{ duration: 2.5, ease: "easeOut", delay: 0.1 }}
-              className="absolute w-[350px] h-[350px] bg-white/40 blur-[80px] rounded-full mix-blend-screen"
-            />
-
-            {/* Logo principal animado (Entrance) */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                rotateX: 40,
-                scale: 0.7,
-                y: 60,
-                filter: "blur(15px)"
-              }}
-              animate={{
-                opacity: 1,
-                rotateX: 0,
-                scale: 1,
-                y: 0,
-                filter: "blur(0px)"
-              }}
-              transition={{
-                duration: 1.4,
-                ease: [0.16, 1, 0.3, 1], // Curva cinematográfica power4.out
-                delay: 0.2
-              }}
-              className="relative z-10"
-            >
-              {/* Animación de Loop Flotante */}
-              <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 1.6 // Comienza justo después de terminar la entrada
-                }}
-              >
-                {/* Contenedor del logo con drop-shadow reactivo */}
-                <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)]">
-                  <img src="/logoab.png" alt="Logo" className="w-80 h-80 object-contain" />
-                </div>
-              </motion.div>
-            </motion.div>
+          <div className="mb-12 relative flex justify-center items-center">
+            <img src="/logoab.png" alt="Logo" className="w-80 h-80 object-contain" />
           </div>
 
           {/* Main headline */}
@@ -108,7 +60,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12 text-pretty"
           >
-            Andrés Blanco para Presidente del Consejo Estudiantil.
+            Andrés Blanco para Representante de la Facultad de Ingeniería.
             <span className="text-foreground"> Universidad EAN, Bogotá.</span>
           </motion.p>
 

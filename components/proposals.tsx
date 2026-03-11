@@ -5,7 +5,6 @@ import {
   BookOpen, 
   Users, 
   Building2, 
-  Wifi,
   Clock,
 } from "lucide-react"
 
@@ -24,11 +23,6 @@ const proposals = [
     icon: Building2,
     title: "Comunidad Tech y Creativa de la Universidad",
     description: "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarollar proyectos y aprender juntos colaborativamente. ",
-  },
-  {
-    icon: Wifi,
-    title: "Conectividad Total",
-    description: "WiFi de alta velocidad en todo el campus y equipos tecnológicos actualizados.",
   },
   {
     icon: Clock,
@@ -61,7 +55,7 @@ export function Proposals() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {proposals.map((proposal, index) => (
             <motion.div
               key={index}
