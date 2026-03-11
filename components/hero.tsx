@@ -38,7 +38,7 @@ export function Hero() {
 
           {/* Logo con animación imponente */}
           <div className="mb-12 relative flex justify-center items-center">
-            <img src="/logoab.png" alt="Logo" className="w-80 h-80 object-contain" />
+            <img src="/yo.png" alt="Logo" className="w-80 h-80 object-contain" />
           </div>
 
           {/* Main headline */}
