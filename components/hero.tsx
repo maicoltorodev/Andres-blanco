@@ -15,6 +15,7 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
+
           {/* Campaign badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,9 +29,10 @@ export function Hero() {
             </span>
           </motion.div>
 
-          {/* Logo con animación imponente */}
+          {/* Logo con animación */}
           <div className="mb-12 relative flex justify-center items-center [perspective:1000px]">
-            {/* Aura de luz trasera pulsante */}
+
+            {/* Aura */}
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: [0, 0.6, 0.3], scale: [0.5, 1.2, 1] }}
@@ -38,7 +40,7 @@ export function Hero() {
               className="absolute w-[350px] h-[350px] bg-accent/20 blur-[80px] rounded-full mix-blend-screen"
             />
 
-            {/* Logo principal animado (Entrance) */}
+            {/* Logo principal */}
             <motion.div
               initial={{
                 opacity: 0,
@@ -56,7 +58,7 @@ export function Hero() {
               }}
               transition={{
                 duration: 1.4,
-                ease: [0.16, 1, 0.3, 1], // Curva cinematográfica power4.out
+                ease: [0.16, 1, 0.3, 1],
                 delay: 0.2
               }}
               whileHover={{
@@ -68,27 +70,26 @@ export function Hero() {
               }}
               className="relative z-10 cursor-pointer"
             >
-              {/* Animación de Loop Flotante */}
+
+              {/* Loop flotante */}
               <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                }}
+                animate={{ y: [0, -10, 0] }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut",
-                  delay: 1.6 // Comienza justo después de terminar la entrada
+                  delay: 1.6
                 }}
               >
-                {/* Contenedor del logo con drop-shadow reactivo */}
                 <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)] hover:drop-shadow-[0_0_35px_rgba(220,20,20,0.5)] transition-all duration-500">
                   <LogoABFinal size={320} />
                 </div>
               </motion.div>
+
             </motion.div>
           </div>
 
-          {/* Main headline */}
+          {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -111,7 +112,7 @@ export function Hero() {
             <span className="text-foreground"> Universidad EAN, Bogotá.</span>
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -125,6 +126,7 @@ export function Hero() {
               Únete al movimiento
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+
             <Button
               size="lg"
               variant="outline"
@@ -134,7 +136,7 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          {/* Stats preview */}
+          {/* Stats */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -154,6 +156,7 @@ export function Hero() {
               </div>
             ))}
           </motion.div>
+
         </div>
       </div>
 
