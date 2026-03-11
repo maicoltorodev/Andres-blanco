@@ -20,29 +20,27 @@ export function Hero() {
       </div>
 
       {/* glow */}
-      <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 bg-yellow-400/10 rounded-full blur-[120px]" />
+      <div 
+        className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[120px]"
+        style={{ backgroundImage: 'radial-gradient(circle, transparent 30%, rgba(0,0,0,0.5) 100%)' }}
+      />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
 
-          {/* badge */}
+          {/* foto */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
             className="mb-8"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-200 text-sm">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              Elecciones EAN 2026
-            </span>
+            <img
+              src="/yo.png"
+              alt="Andrés Blanco"
+              className="w-80 md:w-96 lg:w-[28rem] rounded-3xl shadow-2xl transition-all duration-300 hover:shadow-yellow-400/50 hover:scale-105"
+            />
           </motion.div>
-
-          {/* foto */}
-          <img
-            src="/yo.png"
-            alt="Andrés Blanco"
-            className="w-72 md:w-80 mb-0"
-          />
 
           {/* titulo */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
