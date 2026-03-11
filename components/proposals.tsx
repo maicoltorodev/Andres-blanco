@@ -2,30 +2,30 @@
 
 import { motion } from "framer-motion"
 import { 
-  BookOpen, 
-  Users, 
-  Building2, 
-  Clock,
+  Lightbulb, 
+  MessageSquare, 
+  Zap, 
+  Star,
 } from "lucide-react"
 
 const proposals = [
   {
-    icon: BookOpen,
+    icon: Lightbulb,
     title: "Concursos de innovación",
     description: "Crear concursos entre estudiantes para desarrollar soluciones tecnológicas, apps y proyectos.",
   },
   {
-    icon: Users,
+    icon: MessageSquare,
     title: "Cambiemos la U Juntos",
     description: "Crear una plataforma digital donde los estudiantes puedan proponer ideas para mejorar la universidad.",
   },
   {
-    icon: Building2,
+    icon: Zap,
     title: "Comunidad Tech y Creativa de la Universidad",
     description: "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarollar proyectos y aprender juntos colaborativamente. ",
   },
   {
-    icon: Clock,
+    icon: Star,
     title: "Feria de Talento y Proyectos",
     description: "Organizar una feria semestral donde los estudiantes presenten sus proyectos, investigaciones, apps, emprendimientos o iniciativas sociales.",
   },
