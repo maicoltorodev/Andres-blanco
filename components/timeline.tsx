@@ -4,11 +4,11 @@ import { motion } from "framer-motion"
 import { Check, Circle } from "lucide-react"
 
 const milestones = [
-  { date: "2023-2", title: "Mención de honor — Orquesta Filarmónica", completed: true },
-  { date: "2024-2", title: "Mérito por trabajo artístico — Cultura", completed: true },
-  { date: "2025-2", title: "Mérito por trabajo artístico — Cultura", completed: true },
+  { date: "2023-2", title: "Mención honorífica — Orquesta Filarmónica", completed: true },
+  { date: "2024-2", title: "Mérito por trabajo artístico — Bienestar Universitario", completed: true },
+  { date: "2025-2", title: "Mérito por trabajo artístico — Bienestar Universitario", completed: true },
   { date: "2025", title: "3er puesto — Competencia nacional de coros (ASCUN)", completed: true },
-  { date: "—", title: "Mención de honor — Teatro CAFAM", completed: true },
+  { date: "—", title: "Mención honorífica — Teatro CAFAM", completed: true },
   { date: "25 de marzo", title: "Votaciones", completed: false },
 ]
 
