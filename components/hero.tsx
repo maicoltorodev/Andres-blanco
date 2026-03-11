@@ -12,20 +12,20 @@ export function Hero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='173.2' viewBox='0 0 200 173.2'%3E%3Cg stroke='rgba(255,193,7,0.18)' stroke-width='1.2' fill='none'%3E%3Cpolygon points='50,0 100,28.8 100,86.6 50,115.4 0,86.6 0,28.8'/%3E%3Cpolygon points='150,0 200,28.8 200,86.6 150,115.4 100,86.6 100,28.8'/%3E%3Cpolygon points='100,57.7 150,86.6 150,144.3 100,173.2 50,144.3 50,86.6'/%3E%3C/svg%3E")`,
-          backgroundSize: "200px 173.2px",
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='208' viewBox='0 0 240 208'%3E%3Cg stroke='rgba(255,193,7,0.35)' stroke-width='2' fill='none'%3E%3Cpolygon points='60,0 120,34.6 120,103.9 60,138.6 0,103.9 0,34.6'/%3E%3Cpolygon points='180,0 240,34.6 240,103.9 180,138.6 120,103.9 120,34.6'/%3E%3Cpolygon points='120,69.3 180,103.9 180,173.2 120,208 60,173.2 60,103.9'/%3E%3C/svg%3E")`,
+          backgroundSize: "240px 208px",
           backgroundRepeat: "repeat",
           backgroundPosition: "center"
         }}
       />
 
-      {/* Glow behind logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] animate-pulse" />
+      {/* glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
 
-          {/* Campaign badge */}
+          {/* badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,51 +33,50 @@ export function Hero() {
             className="mb-8"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border text-sm text-muted-foreground">
-              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               Elecciones EAN 2026
             </span>
           </motion.div>
 
-          {/* Logo */}
-          <div className="mb-12 relative flex justify-center items-center">
-            <img src="/logoab.png" alt="Logo AB" className="w-80 h-80 object-contain" />
+          {/* FOTO */}
+          <div className="mb-12 flex justify-center">
+            <img
+              src="/yo.png"
+              alt="Andrés Blanco"
+              className="w-72 md:w-80 object-contain"
+            />
           </div>
 
-          {/* Main title */}
+          {/* titulo */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 font-[family-name:var(--font-display)]"
+            transition={{ duration: 0.6 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
           >
-            <span className="text-foreground">VOTA POR BLANCO</span>
+            VOTA POR BLANCO
             <br />
-            <span className="text-white text-2xl md:text-4xl lg:text-5xl line-through">
+            <span className="text-white text-2xl md:text-4xl line-through">
               NO EN BLANCO
             </span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* subtitulo */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-xl md:text-2xl text-gray-700 max-w-2xl mb-12"
           >
             Andrés Blanco para Representante de la Facultad de Ingeniería.
-            <span className="text-foreground"> Universidad EAN, Bogotá.</span>
+            <span className="text-black"> Universidad EAN, Bogotá.</span>
           </motion.p>
 
-          {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4"
-          >
+          {/* botones */}
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg rounded-full group"
+              className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg rounded-full group"
             >
               Únete al movimiento
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -86,51 +85,22 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg rounded-full"
+              className="px-8 py-6 text-lg rounded-full"
             >
               Conoce las propuestas
             </Button>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="mt-20 grid grid-cols-3 gap-8 md:gap-16"
-          >
-            {[
-              { number: "3+", label: "Años en EAN" },
-              { number: "100%", label: "Compromiso" },
-              { number: "1", label: "Visión" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-foreground">
-                  {stat.number}
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </motion.div>
+          </div>
 
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* scroll */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
-          <ChevronDown className="h-8 w-8 text-muted-foreground" />
-        </motion.div>
+        <ChevronDown className="h-8 w-8 text-gray-500" />
       </motion.div>
 
     </section>
