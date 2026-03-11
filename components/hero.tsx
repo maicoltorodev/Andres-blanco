@@ -33,7 +33,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="mb-8"
+            className="mb-8 mt-20"
           >
             <img
               src="/yo.png"
