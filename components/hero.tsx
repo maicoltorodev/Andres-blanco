@@ -38,13 +38,14 @@ export function Hero() {
             <img
               src="/yo.png"
               alt="Andrés Blanco"
-              className="w-80 md:w-96 lg:w-[28rem] rounded-3xl shadow-2xl transition-all duration-300 hover:shadow-yellow-400/50 hover:scale-105"
+              className="w-80 md:w-96 lg:w-[28rem] rounded-3xl shadow-2xl transition-all duration-300 hover:shadow-white hover:scale-105"
             />
           </motion.div>
 
           {/* titulo */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-none">
             VOTA POR BLANCO
+            <br />
             <span className="text-white line-through text-2xl md:text-4xl">
               NO EN BLANCO
             </span>
