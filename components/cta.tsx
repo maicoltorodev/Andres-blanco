@@ -49,7 +49,7 @@ export function CTA() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg rounded-full group"
             >
-              Vota por Andrés Blanco
+              Vota por Blanco
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button

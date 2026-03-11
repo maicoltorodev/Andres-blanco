@@ -4,30 +4,12 @@ import { motion } from "framer-motion"
 import { Check, Circle } from "lucide-react"
 
 const milestones = [
-  {
-    date: "Marzo 2026",
-    title: "Lanzamiento de Campaña",
-    description: "Presentación oficial de propuestas y plan de gobierno estudiantil.",
-    completed: true,
-  },
-  {
-    date: "Abril 2026",
-    title: "Debates Estudiantiles",
-    description: "Participación en debates abiertos con todos los candidatos.",
-    completed: false,
-  },
-  {
-    date: "Mayo 2026",
-    title: "Votaciones",
-    description: "Tu voto decide el futuro de nuestra universidad.",
-    completed: false,
-  },
-  {
-    date: "Junio 2026",
-    title: "Inicio de Gestión",
-    description: "Comienzo oficial del período de presidencia estudiantil.",
-    completed: false,
-  },
+  { date: "2023-2", title: "Mención de honor — Orquesta Filarmónica", description: "", completed: true },
+  { date: "2024-2", title: "Mérito por trabajo artístico — Cultura", description: "", completed: false },
+  { date: "2025-2", title: "Mérito por trabajo artístico — Cultura", description: "", completed: false },
+  { date: "2025",   title: "3er puesto — Competencia nacional de coros (ASCUN)", description: "", completed: false },
+  { date: "—",      title: "Mención de honor — Teatro CAFAM", description: "", completed: false },
+  { date: "25 de marzo", title: "Votaciones", description: "", completed: false },
 ]
 
 export function Timeline() {
@@ -48,7 +30,7 @@ export function Timeline() {
             Hoja de <span className="text-accent">ruta</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Los momentos clave de nuestra campaña y próximos pasos.
+            Momentos clave (reconocimientos).
           </p>
         </motion.div>
 
@@ -86,7 +68,9 @@ export function Timeline() {
                 <h3 className="text-xl font-semibold mt-1 font-[family-name:var(--font-display)]">
                   {milestone.title}
                 </h3>
-                <p className="text-muted-foreground mt-2">{milestone.description}</p>
+                {milestone.description && (
+                  <p className="text-muted-foreground mt-2">{milestone.description}</p>
+                )}
               </div>
             </motion.div>
           ))}
