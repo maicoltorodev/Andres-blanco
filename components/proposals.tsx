@@ -7,24 +7,23 @@ import {
   Building2, 
   Wifi,
   Clock,
-  Heart
 } from "lucide-react"
 
 const proposals = [
   {
     icon: BookOpen,
-    title: "Educación de Calidad",
-    description: "Más recursos académicos, tutorías gratuitas y acceso a plataformas de aprendizaje premium para todos.",
+    title: "Concursos de innovación",
+    description: "Crear concursos entre estudiantes para desarrollar soluciones tecnológicas, apps y proyectos.",
   },
   {
     icon: Users,
-    title: "Voz Estudiantil",
-    description: "Tu opinión cuenta. Canales directos de comunicación con las directivas y participación real en decisiones.",
+    title: "Cambiemos la U Juntos",
+    description: "Crear una plataforma digital donde los estudiantes puedan proponer ideas para mejorar la universidad.",
   },
   {
     icon: Building2,
-    title: "Infraestructura Moderna",
-    description: "Espacios de estudio renovados, áreas verdes y zonas de descanso dignas para nuestra comunidad.",
+    title: "Comunidad Tech y Creativa de la Universidad",
+    description: "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarollar proyectos y aprender juntos colaborativamente. ",
   },
   {
     icon: Wifi,
@@ -33,13 +32,8 @@ const proposals = [
   },
   {
     icon: Clock,
-    title: "Horarios Flexibles",
-    description: "Propuestas para horarios que se adapten a tu vida, trabajo y compromisos personales.",
-  },
-  {
-    icon: Heart,
-    title: "Bienestar Integral",
-    description: "Programas de salud mental, deportes y cultura para una vida universitaria equilibrada.",
+    title: "Feria de Talento y Proyectos",
+    description: "Organizar una feria semestral donde los estudiantes presenten sus proyectos, investigaciones, apps, emprendimientos o iniciativas sociales.",
   },
 ]
 

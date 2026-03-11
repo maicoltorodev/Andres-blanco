@@ -8,8 +8,15 @@ import { LogoABFinal } from "@/components/logo-ab"
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      {/* Animated background hexagon pattern */}
+      <div 
+        className="absolute inset-0" 
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cdefs%3E%3ClinearGradient id='hex' x1='0%' y1='0%' x2='100%' y2='100%'%3E%3Cstop offset='0%' style='stop-color:rgba(255,193,7,0.12);stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:rgba(255,193,7,0.08);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='40,10 60,20 60,40 40,50 20,40 20,20' fill='none' stroke='rgba(255,193,7,0.15)' stroke-width='1.5'/%3E%3C/svg%3E")`,
+          backgroundSize: '80px 80px',
+          backgroundPosition: '0 0'
+        }}
+      />
 
       {/* Glowing orb effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] animate-pulse" />
@@ -60,14 +67,7 @@ export function Hero() {
                 ease: [0.16, 1, 0.3, 1], // Curva cinematográfica power4.out
                 delay: 0.2
               }}
-              whileHover={{
-                scale: 1.06,
-                rotateY: 8,
-                rotateX: -8,
-                y: -5,
-                transition: { type: "spring", stiffness: 300, damping: 15 }
-              }}
-              className="relative z-10 cursor-pointer"
+              className="relative z-10"
             >
               {/* Animación de Loop Flotante */}
               <motion.div
@@ -82,7 +82,7 @@ export function Hero() {
                 }}
               >
                 {/* Contenedor del logo con drop-shadow reactivo */}
-                <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)] hover:drop-shadow-[0_0_35px_rgba(220,20,20,0.5)] transition-all duration-500">
+                <div className="drop-shadow-[0_0_15px_rgba(200,30,30,0.3)]">
                   <img src="/logoab.png" alt="Logo" className="w-80 h-80 object-contain" />
                 </div>
               </motion.div>

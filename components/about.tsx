@@ -71,7 +71,7 @@ export function About() {
               </p>
               <p className="text-foreground font-medium">
                 Ahora, quiero llevar esa experiencia y compromiso al siguiente nivel como tu
-                presidente del consejo estudiantil.
+                representate de la facultad de ingeniería.
               </p>
             </div>
 

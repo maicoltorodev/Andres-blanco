@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   openGraph: {
     title: 'Andrés Blanco | Presidencia EAN 2026',
-    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
+    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para representante de la facultad de ingeniería.',
     images: [
       {
         url: '/metadata.jpg',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Andrés Blanco | Presidencia EAN 2026',
-    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para presidente del consejo estudiantil.',
+    description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para representante de la facultad de ingeniería.',
     images: ['/metadata.jpg'],
   },
   icons: {
