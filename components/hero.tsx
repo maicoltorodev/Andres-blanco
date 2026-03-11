@@ -45,8 +45,7 @@ export function Hero() {
           {/* titulo */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
             VOTA POR BLANCO
-            <br />
-            <span className="text-gray-300 line-through text-2xl md:text-4xl">
+            <span className="text-white line-through text-2xl md:text-4xl">
               NO EN BLANCO
             </span>
           </h1>
