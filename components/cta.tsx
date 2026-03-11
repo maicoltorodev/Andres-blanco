@@ -28,7 +28,7 @@ export function CTA() {
             className="mb-8"
           >
             <Image
-              src="/manos.png"
+              src="/mano.png"
               alt="AB Logo"
               width={120}
               height={68}
