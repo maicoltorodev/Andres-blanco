@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para representante de la facultad de ingeniería.',
     images: [
       {
-        url: '/metadata.jpg',
+        url: '/espaldas.png',
         width: 1200,
         height: 630,
         alt: 'Andrés Blanco | Presidencia EAN 2026',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Andrés Blanco | Presidencia EAN 2026',
     description: 'Únete al movimiento de cambio en la Universidad EAN. Andrés Blanco para representante de la facultad de ingeniería.',
-    images: ['/metadata.jpg'],
+    images: ['/espaldas.png'],
   },
   icons: {
     icon: [
