@@ -41,7 +41,7 @@ export function Hero() {
           <img
             src="/yo.png"
             alt="Andrés Blanco"
-            className="w-72 md:w-80 mb-10"
+            className="w-72 md:w-80 mb-0"
           />
 
           {/* titulo */}
