@@ -43,7 +43,7 @@ export function Hero() {
           </motion.div>
 
           {/* titulo */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-0 leading-none">
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold mb-0 leading-none">
             VOTA POR BLANCO
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold text-white line-through mb-6 p-0 leading-none">
