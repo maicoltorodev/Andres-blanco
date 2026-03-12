@@ -61,7 +61,7 @@ export function About() {
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-display)] mb-6">
-              Comprometido con la <span className="text-accent">comunidad EAN</span>
+              Comprometido con la <span className="text-accent">comunidad</span>.
             </h2>
 
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
@@ -101,9 +101,9 @@ export function About() {
             <div className="mt-10 grid grid-cols-2 gap-6">
               {[
                 { label: "Carrera", value: "Ing. de Sistemas" },
-                { label: "Universidad", value: "EAN" },
-                { label: "Reconocimientos", value: "3+" },
-                { label: "Eventos representando EAN", value: "5+" },
+                { label: "Semestre", value: "6to" },
+                { label: "Reconocimientos", value: "5+" },
+                { label: "Eventos representando la U", value: "5+" },
               ].map((item, index) => (
                 <div key={index} className="p-4 rounded-xl bg-secondary/50 border border-border">
                   <div className="text-2xl font-bold text-foreground font-[family-name:var(--font-display)]">

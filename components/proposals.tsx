@@ -54,7 +54,7 @@ export function Proposals() {
             Propuestas
           </span>
           <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-display)] mb-4 text-balance">
-            Un plan para <span className="text-accent">transformar</span> la EAN
+            Un plan para <span className="text-accent">transformar</span> la U
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Propuestas concretas, resultados reales. Esto es lo que vamos a lograr juntos.
@@ -70,9 +70,9 @@ export function Proposals() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group p-8 rounded-2xl bg-secondary/50 border border-border hover:border-accent/50 transition-all duration-300"
+              className="group p-10 rounded-3xl bg-white/70 border-2 border-accent hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+              <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
                 <proposal.icon className="w-7 h-7 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-3 font-[family-name:var(--font-display)]">

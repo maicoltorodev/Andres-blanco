@@ -62,9 +62,12 @@ export function Navbar() {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
-                Únete ahora
-              </Button>
+              <a href="https://chat.whatsapp.com/G0Fjf5No67fHi9v0agEmpt?mode=gi_t">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
+                  Únete ahora
+                </Button>
+              </a>
+              
             </div>
 
             {/* Mobile menu button */}

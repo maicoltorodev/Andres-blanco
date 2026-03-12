@@ -59,23 +59,28 @@ export function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+            className="flex flex-col items-center font-bold tracking-tight mb-6 leading-none"
           >
-            <span className="text-foreground">VOTA POR BLANCO</span>
-            <br />
-            <span className="text-accent">NO EN BLANCO</span>
+            <span className="text-5xl md:text-6xl lg:text-7xl text-foreground">
+              VOTA POR BLANCO
+            </span>
+
+            <span className="text-white text-3xl md:text-5xl line-through decoration-white decoration-4">
+              NO EN BLANCO
+            </span>
           </motion.h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12">
-            Andrés Blanco para Presidente del Consejo Estudiantil.
-            <span className="text-foreground"> Universidad EAN, Bogotá.</span>
+            Representante facultad de ingeniería
+            <br />
+            <span className="text-foreground"> Miercoles 25 de Marzo</span>
           </p>
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a
-              href="https://chat.whatsapp.com/TU_LINK_DEL_GRUPO"
+              href="https://chat.whatsapp.com/G0Fjf5No67fHi9v0agEmpt?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               >
@@ -87,10 +92,20 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               </a>
+              <a
+              href="https://censo-electoral.universidadean.edu.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg rounded-full group"
+              >
+                Vota por Blanco
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              </a>
 
-            <Button size="lg" variant="outline" className="rounded-full">
-              Conoce las propuestas
-            </Button>
           </div>
 
         </div>
