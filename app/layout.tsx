@@ -65,10 +65,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+
+        {/* Audio de fondo */}
+        <audio autoPlay loop className="hidden">
+          <source src="/campaign-music.mp3" type="audio/mpeg" />
+        </audio>
+
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
           {children}
           <Analytics />
         </ThemeProvider>
+
       </body>
     </html>
   )

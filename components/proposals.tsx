@@ -14,32 +14,26 @@ const proposals = [
   {
     icon: BookOpen,
     title: "Concursos de innovación",
-    description: "Crear concursos entre estudiantes para desarrollar soluciones tecnológicas, apps y proyectos.",
+    description:
+      "Crear concursos entre estudiantes para desarrollar soluciones tecnológicas, apps y proyectos.",
   },
   {
     icon: Users,
     title: "Cambiemos la U Juntos",
-    description: "Crear una plataforma digital donde los estudiantes puedan proponer ideas para mejorar la universidad.",
+    description:
+      "Crear una plataforma digital donde los estudiantes puedan proponer ideas para mejorar la universidad.",
   },
   {
     icon: Building2,
     title: "Comunidad Tech y Creativa de la Universidad",
-    description: "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarollar proyectos y aprender juntos colaborativamente. ",
-  },
-  {
-    icon: Wifi,
-    title: "Conectividad Total",
-    description: "WiFi de alta velocidad en todo el campus y equipos tecnológicos actualizados.",
+    description:
+      "Crear una comunidad donde estudiantes interesados en tecnología, diseño, videojuegos, startups o investigación puedan reunirse para desarrollar proyectos y aprender juntos.",
   },
   {
     icon: Clock,
     title: "Feria de Talento y Proyectos",
-    description: "Organizar una feria semestral donde los estudiantes presenten sus proyectos, investigaciones, apps, emprendimientos o iniciativas sociales.",
-  },
-  {
-    icon: Heart,
-    title: "Bienestar Integral",
-    description: "Programas de salud mental, deportes y cultura para una vida universitaria equilibrada.",
+    description:
+      "Organizar una feria semestral donde los estudiantes presenten sus proyectos, investigaciones, apps, emprendimientos o iniciativas sociales.",
   },
 ]
 
@@ -67,7 +61,7 @@ export function Proposals() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {proposals.map((proposal, index) => (
             <motion.div
               key={index}

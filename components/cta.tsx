@@ -30,7 +30,7 @@ export function CTA() {
             <Image
               src="/mano.png"
               alt="AB Logo"
-              width={120}
+              width={360}
               height={68}
               className="mx-auto rounded-lg"
             />
