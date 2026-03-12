@@ -80,7 +80,7 @@ export function Hero() {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a
-              href="https://chat.whatsapp.com/G0Fjf5No67fHi9v0agEmpt?mode=gi_t"
+              href="https://whatsapp.com/channel/0029Vb8DYgqLSmbaB7noiX2q"
               target="_blank"
               rel="noopener noreferrer"
               >
